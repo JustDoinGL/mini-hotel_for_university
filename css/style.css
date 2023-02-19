@@ -668,6 +668,99 @@ h1 {
   text-transform: uppercase;
 }
 
+
+/* hotel.html */
+.main__container {
+  margin: 10px auto;
+  max-width: 1200px;
+}
+
+.main__text {
+  margin-top: 40px;
+}
+
+.main__h1 {
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.in__text:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.main__text__photo {
+  float: left;
+  margin-right: 20px;
+}
+
+.main__p {
+  font-size: 22px;
+  margin-bottom: 12px;
+  text-indent: 60px;
+}
+
+.main__awards {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.main__awards__nomination {
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main__ser {
+  display: flex;
+  justify-content: center;
+}
+
+.main__ser__img {
+  max-width: 600px;
+  max-height: 600px;
+}
+
+.footer-a {
+  text-decoration: none;
+  cursor: pointer;
+  color: green;
+  transition: 0.3s;
+}
+
+.footer-a:hover {
+  color: red;
+}
+
+.fother__box {
+  text-decoration: none;
+  color: #7fc142;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.fother__box:hover {
+  color: red;
+}
+
+.back {
+  font-size: 22px;
+  margin: 20px;
+}
+
+.back_a {
+  text-decoration: none;
+  color: #7fc142;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.back_a:hover {
+  color: red;
+}
+
 /*--------newsletter---------*/
 /*--------footer---------*/
 footer {
