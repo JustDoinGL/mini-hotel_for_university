@@ -1,12 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crowny Hotel</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="Images/vector.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <a href="index.html"><img src="Images/logo.png" alt=""></a>
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="home.html">О гостинице</a> </li>
+                    <li><a href="rooms.html">Номера и Акции</a> </li>
+                    <li><a href="pages.html">Услуги</a> </li>
+                    <li><a href="news.html">Новости</a> </li>
+                    <li><a href="contact.html">Контакты</a> </li>
+                    <li><a href="bron.html"><button class="primary-btn">ЗАБРОНИРОВАТЬ НОМЕР</button></a></li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="pages">
+        <div class="main__container">
+            <p class="back"><a class="back_a"  href="index.html">Главная</a> - Наши Услуги</p>
+            <div class="pages__food">
+                <h2 class="pages__food__h2">Немного о нашей еде:</h2>
+                <img class="pages__food__img" src="Images/service.png" alt="Столовая">
+                <p class="pages__food__p">
+                    Питание в отеле очень разнообразное и вкусное. Он предлагает широкий выбор местных продуктов, а
+                    также блюда интернациональной кухни. В ресторане отеля представлен широкий выбор блюд со всего мира,
+                    в том числе итальянской, мексиканской, китайской и индийской. Есть также несколько баров и лаунджей,
+                    которые предлагают широкий выбор напитков и закусок.
+                </p>
+                <p class="pages__food__p">
+                    В отеле есть множество вариантов рассадки для всех гостей, от уютных столиков до больших банкетных
+                    залов. Есть также ряд частных комнат для особых случаев.
+                </p>
+                <p class="pages__food__p">
+                    Персонал в отеле дружелюбный и знающий, обеспечивая отличный сервис для всех гостей. Они всегда
+                    готовы дать совет по меню и сделать так, чтобы каждый гость остался доволен.
+                </p>
+                <p class="pages__food__p">
+                    В отеле большой выбор как алкогольных, так и безалкогольных напитков. Также имеется большой выбор
+                    десертов, пирожных и мороженого. Отель также предлагает широкий выбор здоровых вариантов для тех,
+                    кто ищет что-то более легкое.
+                </p>
+            </div>
+
+            <div class="pages__fitnes">
+                <h2 class="pages__food__h2">Немного о нашем фитнесе:</h2>
+                <img class="pages__fitnes__img" src="Images/gym.jpg" alt="Тренажерный зал">
+                <p class="pages__fitnes__p">
+                    В отеле имеется фитнес-зал, в котором предоставляются различные виды тренировок: спортивное
+                    оздоровление, аэробика, силовые тренировки, йога и йога-тантра. Зал оснащен современным спортивным
+                    инвентарем, включая тренажеры, свежие продукты для принятия пищи после тренировки и другие удобства.
+                    Также в зале можно приобрести абонементы на будущие посещения. Более того, профессиональные тренеры
+                    помогут вам добиться вашей цели.
+                </p>
+            </div>
+
+            <div class="pages__salon">
+                <h2 class="pages__food__h2">Немного о нашем салоне красоты:</h2>
+                <img class="pages__food__img" src="Images/salon.jpg" alt="салон красоты">
+                <p class="pages__food__p">
+                    Салон красоты, расположенный в отеле, является идеальным местом для тех, кто ищет роскоши и удовольствия. От маникюра и педикюра до восковой эпиляции и стрижки салон предлагает широкий спектр услуг на любой вкус. Опытный и профессиональный персонал всегда готов дать совет и помочь вам выглядеть лучше. В салоне также есть выбор высококачественных продуктов, которые помогут вам выглядеть и чувствовать себя лучше. Хотите ли вы провести роскошный день, чтобы побаловать себя, или быстро привести себя в порядок перед следующим важным событием, салон красоты отеля — идеальное место для вас.
+                </p>
+                <p class="pages__food__p">
+                    В салоне работают высококвалифицированные и опытные профессионалы, которые используют только продукты высочайшего качества, чтобы гости всегда получали наилучшие впечатления и уходили с чувством красоты и уверенности. В салоне используются экологически чистые и натуральные продукты, чтобы обеспечить клиентам безопасный и приятный опыт. Чтобы еще больше улучшить впечатления своих гостей, салон также предлагает бесплатные напитки и комфортную и расслабляющую атмосферу. Салон открыт семь дней в неделю и предлагает гибкий график, чтобы лучше удовлетворить потребности своих гостей.
+                </p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="Images/logo-2.png" alt="">
+                <p>Отель средней ценовой категории, расположенный в пригородной зоне города. К услугам гостей
+                    современные номера
+                    с телевизорами с плоским экраном, бесплатным Wi-Fi и удобными кроватями с постельным бельем
+                    премиум-класса. В
+                    ресторане отеля представлено меню из классических американских блюд, а в баре представлен широкий
+                    выбор пива и
+                    вина. В отеле также есть фитнес-центр, открытый бассейн и бизнес-центр. Дружелюбный персонал всегда
+                    готов
+                    помочь гостям с любыми потребностями или запросами.</p>
+
+                <div class="icon">
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Ссылки</h2>
+                <ul>
+                    <li><a class="footer-a" href="home.html">О нас</a></li>
+                    <li><a class="footer-a" href="contact.html">Свяжитесь с наим</a></li>
+                    <li><a class="footer-a" href="pages.html">Сервис</a></li>
+                    <li><a class="footer-a" href="privacy-policy.html">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Наши контакты</h2>
+                <p>Контакты отеля предоставляют важную информацию, такую ​​как цены, наличие мест и удобства, которые
+                    позволяют клиентам принимать обоснованные решения при бронировании отеля.
+                </p>
+                <i class="fa fa-location-dot"></i>
+                <label>1201 park street, Avenue, Dhanmondy, Dhaka. </label> <br>
+                <i class="fa fa-phone"></i>
+                <label><a class="fother__box" href="tel:+88657524332">[88] 657 524 332</a></label> <br>
+                <i class="fa fa-envelope"></i>
+                <label><a class="fother__box" href="mailto:info@dentar.com">info@dentar.com</a></label> <br>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>

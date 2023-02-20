@@ -61,6 +61,10 @@ button {
   color: white;
 }
 
+.secondary-btn:hover {
+  background: #7fc142;
+}
+
 .container {
   max-width: 85%;
   margin: auto;
@@ -767,6 +771,14 @@ h1 {
   color: red;
 }
 
+.home__contact {
+  transition: 0.3s;
+}
+
+.home__contact:hover {
+  color: #7fc142;
+}
+
 .privacy-policy__h1 {
   text-align: center;
   font-size: 45px;
@@ -792,15 +804,47 @@ h1 {
   font-size: 33px;
 }
 
-.privacy-policy__h3__a {
-  text-decoration: none;
-  cursor: pointer;
-  transition: 0.3s;
+.pages__food__img {
+  float: left;
+  margin-right: 12px;
+  max-width: 40%;
+  max-height: 30%;
 }
 
-.privacy-policy__h3__a:hover {
-  color: red;
+.pages__food__h2 {
+  text-align: center;
+  color: #000;
+  margin-top: 30px;
+  font-size: 44px;
+  margin-bottom: 30px;
 }
+
+.pages__food__p {
+  font-size: 18px;
+  margin-top: 10px;
+  text-indent: 30px; 
+}
+
+.pages__fitnes__img {
+    float: right;
+    margin-left: 12px;
+}
+
+.pages__fitnes__p {
+  font-size: 22px;
+  margin-top: 10px;
+  text-indent: 30px; 
+}
+
+.pages__fitnes__img {
+  max-width: 45%;
+}
+
+.pages__salon {
+  margin-bottom: 30px;
+}
+
+
 /*--------newsletter---------*/
 /*--------footer---------*/
 footer {
