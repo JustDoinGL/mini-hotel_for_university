@@ -679,6 +679,12 @@ h1 {
   margin-top: 40px;
 }
 
+.in__text {
+  background-color: #b6b7b9;
+  width: 35%;
+  font-size: 20px;
+}
+
 .main__h1 {
   font-size: 40px;
   color: #000;
@@ -761,6 +767,40 @@ h1 {
   color: red;
 }
 
+.privacy-policy__h1 {
+  text-align: center;
+  font-size: 45px;
+  color: #000;
+  margin-top: 20px;
+}
+
+.privacy-policy__h2 {
+  font-size: 32px;
+  margin-top: 25px;
+}
+
+.privacy-policy__p2 {
+  font-size: 18px;
+  margin-top: 10px;
+  text-indent: 30px; 
+}
+
+.privacy-policy__h3 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 33px;
+}
+
+.privacy-policy__h3__a {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.privacy-policy__h3__a:hover {
+  color: red;
+}
 /*--------newsletter---------*/
 /*--------footer---------*/
 footer {
