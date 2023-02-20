@@ -1,22 +1,127 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Crowny Hotel</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="shortcut icon" href="Images/vector.jfif" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-            integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowny Hotel</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="Images/vector.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
 <body>
-    
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <a href="index.html"><img src="Images/logo.png" alt=""></a>
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="home.html">О гостинице</a> </li>
+                    <li><a href="rooms.html">Номера и Акции</a> </li>
+                    <li><a href="pages.html">Услуги</a> </li>
+                    <li><a href="news.html">Новости</a> </li>
+                    <li><a href="contact.html">Контакты</a> </li>
+                    <li><a href="bron.html"><button class="primary-btn">ЗАБРОНИРОВАТЬ НОМЕР</button></a></li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main__contact">
+        <div class="main__container">
+            <div class="main__text">
+                <p class="back"><a class="back_a" href="index.html">Главная</a> - Наши контакты</p>
+            </div>
+            <div class="main__contact__info">
+                <h1 class="main__contact__info__h1">Контакты Отеля <span style="color: green;">Crowny</span></h1>
+            </div>
+            <div class="main__contact__box">
+                <div class="main__contact__box__label">
+                    <i class="fa fa-location-dot"></i>
+                    <label>1201 park street, Avenue, Dhanmondy, Dhaka. </label> <br>
+                </div>
+                <div class="main__contact__box__label">
+                    <i class="fa fa-phone"></i>
+                    <label><a class="fother__box" href="tel:+88657524332">[88] 657 524 332</a></label> <br>
+                </div>
+                <div class="main__contact__box__label">
+                    <i class="fa fa-envelope"></i>
+                    <label><a class="fother__box" href="mailto:info@dentar.com">info@dentar.com</a></label> <br>
+                </div>
+            </div>
+            <div class="main__contact__metro">
+                <h4 class="main__contact__metro__h4">Как добраться до гостиницы:</h4>
+                <ul class="main__contact__metro_ul">
+                    <li class="main__contact__metro__li">Автомобиль. Самый прямой и эффективный способ добраться до отеля — это автомобиль.</li>
+                    <li class="main__contact__metro__li">Такси. Удобно добираться до отеля на такси, так как оно может быстро и легко обеспечить доставку от двери до двери.</li>
+                    <li class="main__contact__metro__li">Общественный транспорт: В зависимости от того, где вы находитесь, общественный транспорт может добраться до отеля. Перед отправлением обязательно проверяйте любые изменения маршрута или расписания.</li>
+                    <li class="main__contact__metro__li">Прогулка. Если отель находится в нескольких минутах ходьбы, это может быть отличным способом получить дополнительные упражнения во время осмотра достопримечательностей.</li>
+                </ul>
+            </div>
+            <div class="main__contact__map">
+                <h4 class="main__contact__metro__h4">Мы на карте:</h4>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.1210975622157!2d37.484899815827816!3d55.73902488054964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b549531a7e9089%3A0xdb22065c3bee1d06!2z0J7Qu9C10LrQviDQlNGD0L3QtNC40YfQsCDRg9C7Liwg0JzQvtGB0LrQstCwLCAxMjEwOTY!5e0!3m2!1sru!2sru!4v1676905515196!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="Images/logo-2.png" alt="">
+                <p>Отель средней ценовой категории, расположенный в пригородной зоне города. К услугам гостей
+                    современные номера с телевизорами с плоским экраном, бесплатным Wi-Fi и удобными кроватями с
+                    постельным бельем премиум-класса. В ресторане отеля представлено меню из классических американских
+                    блюд, а в баре представлен широкий выбор пива и вина. В отеле также есть фитнес-центр, открытый
+                    бассейн и бизнес-центр. Дружелюбный персонал всегда готов помочь гостям с любыми потребностями или
+                    запросами.</p>
+
+                <div class="icon">
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Ссылки</h2>
+                <ul>
+                    <li><a class="footer-a" href="home.html">О нас</a></li>
+                    <li><a class="footer-a" href="contact.html">Свяжитесь с наим</a></li>
+                    <li><a class="footer-a" href="pages.html">Сервис</a></li>
+                    <li><a class="footer-a" href="privacy-policy.html">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Наши контакты</h2>
+                <p>Контакты отеля предоставляют важную информацию, такую ​​как цены, наличие мест и удобства, которые
+                    позволяют клиентам принимать обоснованные решения при бронировании отеля.
+                </p>
+                <i class="fa fa-location-dot"></i>
+                <label>1201 park street, Avenue, Dhanmondy, Dhaka. </label> <br>
+                <i class="fa fa-phone"></i>
+                <label><a class="fother__box" href="tel:+88657524332">[88] 657 524 332</a></label> <br>
+                <i class="fa fa-envelope"></i>
+                <label><a class="fother__box" href="mailto:info@dentar.com">info@dentar.com</a></label> <br>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -390,6 +390,45 @@ h1 {
   right: 0;
 }
 
+.main__contact__info__h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+
+.main__contact__box {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.main__contact__box__label {
+  width: 100%;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.main__contact__metro__h4 {
+  align-items: flex-start;
+  font-size: 22px;
+}
+
+.main__contact__metro__li {
+  list-style-type: circle;
+}
+
+.main__contact__map {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.main__contact__metro__li {
+  margin-top: 19px;
+  font-size: 17px;
+}
+
+
 /*--------rooms---------*/
 /*--------gallery---------*/
 .gallery {
