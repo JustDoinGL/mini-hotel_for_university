@@ -1,22 +1,142 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Crowny Hotel</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="shortcut icon" href="Images/vector.jfif" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-            integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowny Hotel</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="Images/vector.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
 <body>
-    
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <a href="index.html"><img src="Images/logo.png" alt=""></a>
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="home.html">О гостинице</a> </li>
+                    <li><a href="rooms.html">Номера и Акции</a> </li>
+                    <li><a href="pages.html">Услуги</a> </li>
+                    <li><a href="news.html">Новости</a> </li>
+                    <li><a href="contact.html">Контакты</a> </li>
+                    <li><a href="bron.html"><button class="primary-btn">ЗАБРОНИРОВАТЬ НОМЕР</button></a></li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="pages__main">
+        <div class="main__container">
+            <a name = "Ibtersting"></a>
+            <p class="back"><a class="back_a" href="index.html">Главная</a> - Интересное о нас - <a class="back_a" href="#News">Новости</a></p>
+            <div class="heading">
+                <h2 class="pages__main__h2">Интересное о нас:</h2>
+                <h3 class="pages__main__h3">В отеле есть множество удобств, чтобы убедиться, что гости имеют комфортное
+                    и приятное пребывание.
+                </h3>
+                <section class="pages__main__section">
+                    <h4 class="pages__main__section__h4">Наш Бар</h4>
+                    <img class="pages__main__section__img" src="Images/blog-1.png" alt="Бар">
+                    <p class="pages__main__section__p">В лобби-баре всегда играет музыка, иногда даже вживую. Здесь
+                        постояльцы и гости гостиницы могут просматривать телевизор со спортивными, музыкальными
+                        программами, читать свежие журналы, газеты, слушать музыку. Зона отдыха почти всегда предлагает
+                        доступ в интернет и бесплатный Wi-Fi.
+                        Отель Crowny, расположенный в центре города Москва, приглашает разместиться туристам и
+                        путешественникам. Дети до 3-х лет проживает бесплатно. Здесь будет удобно провести время
+                        бизнес-партнерам, ведь до Москва-Сити и Экспоцентра на Красной Пресне добираться всего 10 минут.
+                        Вежливый персонал, изысканный стильный интерьер четырехзвездочной гостиницы, удобное
+                        расположение вблизи с историческими достопримечательностями столицы. Время, проведенное в
+                        гостинице «Арбат Хаус», не оставят равнодушным никого. Узнать подробную информацию и последние
+                        новости вы можете на главной странице сайта отеля и в соответствующих разделах: услуги,
+                        ресторан, контакты. Забронировать номер можно онлайн на сайте и по номеру телефона.</p>
+
+                </section>
+                <section class="pages__main__section">
+                    <h4 class="pages__main__section__h4">Наш Бассейн</h4>
+                    <img class="pages__main__section__img" src="Images/pool.jpg" alt="Бассейн">
+                    <p class="pages__main__section__p">Отель «Имеретинский» с многочисленными бассейнами позволит Вам
+                        приятно провести время в любое время года. Каждого постояльца ждет кристально чистая, теплая
+                        вода и все что нужно для хорошего отдыха и приятного времяпровождения.</p>
+                    <h5 class="pages__main__section__h5">Главные особенности:</h5>
+                    <ul class="pages__main__section__ul">
+                        <li class="pages__main__section__li"> Два вида бассейнов: крытый, открытый;</li>
+                        <li class="pages__main__section__li">Большое количество развлечений для маленьких постояльцев;</li>
+                        <li class="pages__main__section__li">Температура бассейна +27°С;</li>
+                        <li class="pages__main__section__li">Работает круглый год.</li>
+                    </ul>
+                    <p class="pages__main__section__p">Благодаря множеству детских бассейнов, маленькие постояльцы без труда и опаски смогут веселиться
+                        с аниматорами, которые ежедневно дают развлекательную программу для всех детей и взрослых.</p>
+                </section>
+            </div>
+            <a name = "News"></a>
+            <p class="back"><a class="back_a" href="index.html">Главная</a> - <a class="back_a" href="#Ibtersting">Интересное о нас</a> - Новости</p>
+
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="Images/logo-2.png" alt="">
+                <p>Отель средней ценовой категории, расположенный в пригородной зоне города. К услугам гостей
+                    современные номера
+                    с телевизорами с плоским экраном, бесплатным Wi-Fi и удобными кроватями с постельным бельем
+                    премиум-класса. В
+                    ресторане отеля представлено меню из классических американских блюд, а в баре представлен широкий
+                    выбор пива и
+                    вина. В отеле также есть фитнес-центр, открытый бассейн и бизнес-центр. Дружелюбный персонал всегда
+                    готов
+                    помочь гостям с любыми потребностями или запросами.</p>
+
+                <div class="icon">
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Ссылки</h2>
+                <ul>
+                    <li><a class="footer-a" href="home.html">О нас</a></li>
+                    <li><a class="footer-a" href="contact.html">Свяжитесь с наим</a></li>
+                    <li><a class="footer-a" href="pages.html">Сервис</a></li>
+                    <li><a class="footer-a" href="privacy-policy.html">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Наши контакты</h2>
+                <p>Контакты отеля предоставляют важную информацию, такую ​​как цены, наличие мест и удобства, которые
+                    позволяют клиентам принимать обоснованные решения при бронировании отеля.
+                </p>
+                <i class="fa fa-location-dot"></i>
+                <label>1201 park street, Avenue, Dhanmondy, Dhaka. </label> <br>
+                <i class="fa fa-phone"></i>
+                <label><a class="fother__box" href="tel:+88657524332">[88] 657 524 332</a></label> <br>
+                <i class="fa fa-envelope"></i>
+                <label><a class="fother__box" href="mailto:info@dentar.com">info@dentar.com</a></label> <br>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

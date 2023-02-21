@@ -642,6 +642,49 @@ h1 {
   margin-right: 20px;
 }
 
+.pages__main__h2, .pages__main__h3 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.pages__main__section__h4 {
+  text-align: center;
+  text-decoration: underline;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.pages__main__section__img {
+  float: right;
+  margin-left: 12px;
+  width: 40%;
+}
+
+.pages__main__section__ul {
+  margin-bottom: 20px;
+  
+}
+
+.pages__main__section__h5 {
+  font-size: 20px;
+  margin-bottom: 19px;
+}
+
+.pages__main__section__li{
+  font-size: 17px;
+  list-style-type: circle;
+}
+
+.pages__main__section__p {
+  font-size: 18px;
+  margin-bottom: 40px; 
+  text-indent: 30px;
+}
+
+.pages__main__p {
+  font-size: 22px;
+  text-align: center;
+}
+
 .news .left {
   padding: 30px 0;
   width: 65%;
