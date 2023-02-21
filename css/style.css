@@ -482,6 +482,10 @@ h1 {
   font-weight: 500;
 }
 
+.items:hover {
+  background-color: blanchedalmond;
+}
+
 .gallery .items:hover .overlay,
 .gallery .items:hover .img::after {
   opacity: 1;
@@ -522,6 +526,10 @@ h1 {
   text-align: center;
   transition: 0.5s;
   padding: 20px;
+}
+
+.box:hover {
+  background-color: whitesmoke;
 }
 
 .services .box .text {
@@ -663,6 +671,7 @@ h1 {
   margin-bottom: 20px;
   
 }
+
 
 .pages__main__section__h5 {
   font-size: 20px;
