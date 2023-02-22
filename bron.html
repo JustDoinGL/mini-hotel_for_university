@@ -1,22 +1,291 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Crowny Hotel</title>
-        <link rel="stylesheet" href="./css/style.css">
-        <link rel="shortcut icon" href="Images/vector.jfif" type="image/x-icon">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
-            integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-            integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-            integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crowny Hotel</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="Images/vector.jfif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+</head>
+
 <body>
-    
+    <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <a href="index.html"><img src="Images/logo.png" alt=""></a>
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                    <li><a href="home.html">О гостинице</a> </li>
+                    <li><a href="rooms.html">Номера и Акции</a> </li>
+                    <li><a href="pages.html">Услуги</a> </li>
+                    <li><a href="news.html">Новости</a> </li>
+                    <li><a href="contact.html">Контакты</a> </li>
+                    <li><a href="bron.html"><button class="primary-btn">ЗАБРОНИРОВАТЬ НОМЕР</button></a></li>
+                </ul>
+                <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main__container">
+            <p class="back"><a class="back_a" href="index.html">Главная</a> - Бронирование номера</p>
+        </div>
+        <div class="main__container">
+            <div class="content mtop">
+                <div class="bron__main">
+                    <div class="items bron__main__rooms">
+                        <div class="image">
+                            <img class="bron__main__rooms__img" src="Images/room-1.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Стандартный номер</h2>
+                            <div class="rate flex">
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                            </div>
+                            <p>Стандартный гостиничный номер включает в себя кровать, письменный стол, телевизор и
+                                ванную
+                                комнату с
+                                ванной.
+                            </p>
+                            <div class="bron__main__rooms__bottom">
+                                <button class="primary-btn">ЗАБРОНИРОВАТЬ</button>
+                                <h3> 4675₽ <span class=> <br> Цена в Сутки </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items bron__main__rooms">
+                        <div class="image">
+                            <img class="bron__main__rooms__img" src="Images/room-2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Комфортный номер</h2>
+                            <div class="rate flex">
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                            </div>
+                            <p>Комфортный гостиничный номер включает в себя кровать, письменный стол, телевизор, личный
+                                бар
+                                и ванную
+                                комнату с ванной.
+                            </p>
+                            <div class="bron__main__rooms__bottom">
+                                <button class="primary-btn">ЗАБРОНИРОВАТЬ</button>
+                                <h3>7543₽ <span> <br>Цена в Сутки </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items bron__main__rooms">
+                        <div class="image">
+                            <img class="bron__main__rooms__img" src="Images/room-3.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Люкс номер</h2>
+                            <div class="rate flex">
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                            </div>
+                            <p>Люксовый гостиничный номер включает в себя кровать, письменный стол, телевизор, личная
+                                веранда и ванную
+                                комнату с ванной.
+                            </p>
+                            <div class="bron__main__rooms__bottom">
+                                <button class="primary-btn">ЗАБРОНИРОВАТЬ</button>
+                                <h3>12000₽ <span> <br> Цена в Сутки </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items bron__main__rooms">
+                        <div class="image">
+                            <img class="bron__main__rooms__img" src="Images/room-4.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Комфорт+ номер</h2>
+                            <div class="rate flex">
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                            </div>
+                            <p>Комфортный гостиничный номер включает в себя кровать, письменный стол, телевизор, личный
+                                бар
+                                и ванную
+                                комнату с ванной.
+                            </p>
+                            <div class="bron__main__rooms__bottom">
+                                <button class="primary-btn">ЗАБРОНИРОВАТЬ</button>
+                                <h3>7543₽ <span> <br>Цена в Сутки </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items bron__main__rooms">
+                        <div class="image">
+                            <img class="bron__main__rooms__img" src="Images/room-5.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Стандарт+ номер</h2>
+                            <div class="rate flex">
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                            </div>
+                            <p>Стандартный гостиничный номер включает в себя кровать, письменный стол, телевизор и
+                                ванную
+                                комнату с
+                                ванной.
+                            </p>
+                            <div class="bron__main__rooms__bottom">
+                                <button class="primary-btn">ЗАБРОНИРОВАТЬ</button>
+                                <h3> 4675₽ <span class=> <br> Цена в Сутки </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items bron__main__rooms">
+                        <div class="image">
+                            <img class="bron__main__rooms__img" src="Images/room-6.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Классический+ номер</h2>
+                            <div class="rate flex">
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                            </div>
+                            <p>Классический+ гостиничный номер включает в себя кровать, стол, телевизор и ванную комнату
+                                с
+                                ванной.
+                            </p>
+                            <div class="bron__main__rooms__bottom">
+                                <button class="primary-btn">ЗАБРОНИРОВАТЬ</button>
+                                <h3>8000₽ <span> <br> Цена в Сутки </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items bron__main__rooms">
+                        <div class="image">
+                            <img class="bron__main__rooms__img" src="Images/room-7.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Люкс номер</h2>
+                            <div class="rate flex">
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                            </div>
+                            <p>Люксовый гостиничный номер включает в себя кровать, стол, телевизор, личная веранда и
+                                ванную
+                                комнату с
+                                ванной.
+                            </p>
+                            <div class="bron__main__rooms__bottom">
+                                <button class="primary-btn">ЗАБРОНИРОВАТЬ</button>
+                                <h3>12000₽ <span> <br> Цена в Сутки </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items bron__main__rooms">
+                        <div class="image">
+                            <img class="bron__main__rooms__img" src="Images/room-8.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h2>Классический номер</h2>
+                            <div class="rate flex">
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                                <i style="color: yellow;" class="fa fa-star"></i>
+                            </div>
+                            <p>Классический гостиничный номер включает в себя кровать, стол, телевизор,личный балкон и
+                                ванную комнату
+                                с ванной.
+                            </p>
+                            <div class="bron__main__rooms__bottom">
+                                <button class="primary-btn">ЗАБРОНИРОВАТЬ</button>
+                                <h3>6599₽ <span> <br> Цена в Сутки </span> </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="container grid">
+            <div class="box">
+                <img src="Images/logo-2.png" alt="">
+                <p>Отель средней ценовой категории, расположенный в пригородной зоне города. К услугам гостей
+                    современные номера с телевизорами с плоским экраном, бесплатным Wi-Fi и удобными кроватями с
+                    постельным бельем премиум-класса. В ресторане отеля представлено меню из классических американских
+                    блюд, а в баре представлен широкий выбор пива и вина. В отеле также есть фитнес-центр, открытый
+                    бассейн и бизнес-центр. Дружелюбный персонал всегда готов помочь гостям с любыми потребностями или
+                    запросами.</p>
+
+                <div class="icon">
+                    <i class="fa fa-youtube"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <h2>Ссылки</h2>
+                <ul>
+                    <li><a class="footer-a" href="home.html">О нас</a></li>
+                    <li><a class="footer-a" href="#">Свяжитесь с наим</a></li>
+                    <li><a class="footer-a" href="#">Сервис</a></li>
+                    <li><a class="footer-a" href="#">Политика конфиденциальности</a></li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h2>Наши контакты</h2>
+                <p>Контакты отеля предоставляют важную информацию, такую ​​как цены, наличие мест и удобства, которые
+                    позволяют клиентам принимать обоснованные решения при бронировании отеля.
+                </p>
+                <i class="fa fa-location-dot"></i>
+                <label>1201 park street, Avenue, Dhanmondy, Dhaka. </label> <br>
+                <i class="fa fa-phone"></i>
+                <label><a class="fother__box" href="tel:+88657524332">[88] 657 524 332</a></label> <br>
+                <i class="fa fa-envelope"></i>
+                <label><a class="fother__box" href="mailto:info@dentar.com">info@dentar.com</a></label> <br>
+            </div>
+        </div>
+    </footer>
+
+    <div class="legal">
+        <p class="container">Copyright (c) 2022 Copyright Holder All Rights Reserved.</p>
+    </div>
+
+    <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
