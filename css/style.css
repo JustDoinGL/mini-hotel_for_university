@@ -531,7 +531,46 @@ h1 {
   border-radius: 12px;
   padding: 12px;
   outline: #7fc142 solid 2px;
+  text-decoration: none;
+  transition: 0.5s;
 }
+
+.section__h2 {
+  text-align: center;
+  color: #000;
+}
+
+
+.rooms__a:hover .section__h2 {
+  color: #7fc142;
+  transition: 0.5s;
+}
+
+.rooms__a:hover .primary-btn {
+  color: #7fc142;
+  background: red;
+  transition: 0.5s;
+}
+
+.section__h2__i {
+  display: flex;
+  justify-content: center;
+}
+
+.rooms__a:hover  {
+  outline: #7fc142 solid 2px;
+}
+
+.bron__main__rooms:hover {
+  background: whitesmoke;
+  outline: red solid 2px;
+}
+
+.bron__main__rooms:hover .primary-btn { 
+  background: red;
+}
+
+
 
 .bron__main__rooms__i {
   margin: 12px 0;
@@ -546,6 +585,15 @@ h1 {
 
 .bron__main__rooms__p {
   text-align: center;
+  color: #000;
+}
+
+.bron__main__rooms__span {
+  color: #000;
+}
+
+.bron__main__rooms__h3 {
+  color: #000;
 }
 
 /*--------gallery---------*/
