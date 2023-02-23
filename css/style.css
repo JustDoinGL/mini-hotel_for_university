@@ -521,6 +521,7 @@ h1 {
 .bron__main__rooms__img {
   width: 100%;
   padding: 13px;
+  border-radius: 111px;
 }
 
 .bron__main__rooms {
@@ -530,6 +531,21 @@ h1 {
   border-radius: 12px;
   padding: 12px;
   outline: #7fc142 solid 2px;
+}
+
+.bron__main__rooms__i {
+  margin: 12px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.bron__main__rooms__h2 {
+  text-align: center;
+  color: #7fc142;
+}
+
+.bron__main__rooms__p {
+  text-align: center;
 }
 
 /*--------gallery---------*/
