@@ -46,3 +46,11 @@ span {
     left: 140px !important;
     right: auto;
 }
+
+/* roms */
+.rooms__information__p {
+    text-align: center;
+    font-size: 22px;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+}
