@@ -440,6 +440,10 @@ h1 {
   height: 100%;
 }
 
+.image {
+  max-height: 210px;
+} 
+
 .gallery .img {
   position: relative;
 }
@@ -482,9 +486,6 @@ h1 {
   font-weight: 500;
 }
 
-.items:hover {
-  background-color: blanchedalmond;
-}
 
 .bron__main__rooms__bottom {
   width: 90%;
@@ -722,6 +723,10 @@ h1 {
 .owl-carousel2 .active span {
   background: #7fc142 !important;
   border: 2px solid #7fc142;
+}
+
+.fff:hover .text {
+  background: whitesmoke;  
 }
 
 /*--------Customer---------*/
