@@ -31,7 +31,7 @@ span {
 }
 
 .swiper-slide img {
-    width: 58%;
+    width: 40%;
     object-fit: cover;
 }
 
@@ -59,4 +59,10 @@ span {
     text-align: center;
     font-size: 33px;
     margin-top: 20px;
+}
+
+.main__container__bottom {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 30px;
 }

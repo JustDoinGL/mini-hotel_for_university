@@ -440,8 +440,8 @@ h1 {
   height: 100%;
 }
 
-.image {
-  max-height: 210px;
+.image__z {
+  max-height: 210px;  
 } 
 
 .gallery .img {
