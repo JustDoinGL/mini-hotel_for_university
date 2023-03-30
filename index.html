@@ -779,11 +779,22 @@
 
   <section class="newsletter mtop">
     <div class="container flex_space">
-      <h1>Подписывайтесь на нашу новостную рассылку</h1>
-      <input type="text" style="font-size: 22px;" placeholder="Ваш Email">
-      <button class="in__text">Подписаться на наши новости</button>
+      <h1 id="resail">Подписывайтесь на нашу новостную рассылку</h1>
+      <input id="text" type="text" style="font-size: 22px;" placeholder="Ваш Email">
+      <button id="button" class="in__text">Подписаться на наши новости</button>
     </div>
   </section>
+
+  <script>
+     let emailBatton = document.getElementById('button')
+     let text = document.getElementById('text')
+     let resail = document.getElementById('resail')
+
+     emailBatton.addEventListener('click', changeH1 = () => {
+      text.value = ''
+      resail.innerHTML = 'Вы подписались на наши новости!'
+     })
+  </script>
 
 
   <footer>
